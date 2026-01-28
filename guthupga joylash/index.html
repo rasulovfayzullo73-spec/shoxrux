@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fayzullo | Frontend Developer</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .fade-up {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 1s ease;
+        }
+
+        .fade-up.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 font-sans">
+
+    <!-- Navbar -->
+    <header id="s1" class="fixed top-0 w-full bg-white shadow z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+            <h1 class="text-xl font-bold">Fayzullo</h1>
+            <nav class="space-x-6">
+                <a href="#about" class="hover:text-blue-500 transition">About</a>
+                <a href="#skills" class="hover:text-blue-500 transition">Skills</a>
+                <a href="#projects" class="hover:text-blue-500 transition">Projects</a>
+                <a href="#contact" class="hover:text-blue-500 transition">Call</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+        class="h-screen flex flex-col justify-center items-center text-white text-center relative bg-cover bg-center"
+        style="background-image: url('assets/projects/coding-bg.jpg');">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div> <!-- overlay -->
+        <div class="relative z-10">
+            <h2 class="text-5xl md:text-6xl font-bold mb-4 animate-bounce">Salom, men Fayzullo</h2>
+            <p class="text-xl md:text-2xl">Frontend Developer | HTML | Tailwind | JS | PHP | Laravel</p>
+            <a href="#contact"
+                class="mt-8 inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-gray-200 transition">Bog‘lanish</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="max-w-4xl mx-auto my-24 px-6 fade-up">
+        <h2 class="text-3xl font-bold mb-6 text-center">About Me</h2>
+        <div class="bg-white p-8 rounded-xl shadow-lg">
+            <p class="mb-4 text-gray-700">Men Fayzullo, frontend developerman. Web sahifalarni professional va
+                responsive qilib yarataman.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-600">
+                <p><strong>Yosh:</strong> 20</p>
+                <p><strong>Manzil:</strong> Tashkent, Uzbekistan</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="max-w-4xl mx-auto my-24 px-6 fade-up">
+        <h2 class="text-3xl font-bold mb-6 text-center">Skills</h2>
+        <div class="flex flex-wrap justify-center gap-4">
+            <span class="html">HTML</span>
+            <span class="html">CSS</span>
+            <span class="html">REACT</span>
+            <span class="html">Tailwind
+                CSS</span>
+            <span class="html">JavaScript</span>
+            <span class="html">PHP</span>
+            <span class="html">Laravel</span>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="max-w-6xl mx-auto my-24 px-6 fade-up">
+        <h2 class="text-3xl font-bold mb-6 text-center">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:scale-105 transform transition">
+                <img src="./assets/ss1.jpg" alt="Project 1" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-xl mb-2">Admin Dashboard</h3>
+                    <p class="text-gray-600 text-sm">Responsive dashboard with Tailwind, JS and Laravel backend
+                        integration.</p>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:scale-105 transform transition">
+                <img src="./ChatGPT Image 28 янв. 2026 г., 16_31_15.png" alt="Project 2"
+                    class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-xl mb-2">Portfolio Website</h3>
+                    <p class="text-gray-600 text-sm">Personal portfolio built with Tailwind CSS, HTML, JS for frontend.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="inp">
+        <h2 class="text-3xl font-bold mb-6 text-center">Contact Me</h2>
+        <div class="w1">
+            <form class="flex flex-col gap-4">
+                <input type="text" placeholder="Ism Familya"
+                    class="p-3 border rounded-lg focus:ring-2 focus:ring-blue-500">
+                <input type="email" placeholder="Email" class="p-3 border rounded-lg focus:ring-2 focus:ring-blue-500">
+                <input type="text" placeholder="Telefon" id="phone"
+                    class="p-3 border rounded-lg focus:ring-2 focus:ring-blue-500">
+                <textarea placeholder="Xabar" class="p-3 border rounded-lg focus:ring-2 focus:ring-blue-500"></textarea>
+                <button type="submit"
+                    class="bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition">Send</button>
+            </form>
+            <div class="flex flex-col gap-4 justify-center">
+                <a href="https://t.me/YourUsername" target="_blank"
+                    class="bg-blue-400 text-white px-4 py-3 rounded-lg w-max hover:bg-blue-500 transition text-center">Telegramga
+                    o'tish</a>
+                <div class="flex items-center gap-2">
+                    <span id="copyPhone" class="bg-gray-200 px-4 py-2 rounded-lg cursor-pointer hover:bg-gray-300">+998
+                        97-060-32-57</span>
+                    <span id="copyMsg" class="text-green-600 hidden font-semibold">Copied!</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center py-6">
+        &copy; 2026 Fayzullo. All rights reserved.
+    </footer>
+
+    <!-- JS -->
+    <script>
+        // Scroll animation
+        const faders = document.querySelectorAll('.fade-up');
+        const appearOptions = { threshold: 0.3 };
+        const appearOnScroll = new IntersectionObserver(function (entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, appearOptions);
+        faders.forEach(fader => { appearOnScroll.observe(fader); });
+
+        // Copy phone
+        const phone = document.getElementById('copyPhone');
+        const msg = document.getElementById('copyMsg');
+        phone.addEventListener('click', () => {
+            navigator.clipboard.writeText(phone.textContent);
+            msg.classList.remove('hidden');
+            setTimeout(() => { msg.classList.add('hidden'); }, 1500);
+        });
+    </script>
+
+</body>
+
+</html>
